@@ -1,0 +1,10 @@
+<section class="productos">
+  <!-- MINI BAG LOVE CROCCO -->
+  <div class="producto">
+    <img src="https://via.placeholder.com/300x400?text=Mini+Bag+Crocco" alt="MINI BAG LOVE CROCCO">
+    <h2>MINI LOVE BAG CROCCO</h2>
+    <p>Mini bag love crocco, realizada con cuerina PU de la mejor calidad y medidas aproximadas de 21x15x8cm, con cierre metálico y deslizador YKK.</p>
+    <div class="precio">$15.000</div>
+    <button onclick="agregarAlCarrito('MINI BAG LOVE CROCCO', 15000)">Agregar al carrito</button>
+  </div>
+</section>

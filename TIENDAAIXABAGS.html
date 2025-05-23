@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aixa Bags - Tienda Online</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #f5f5f5;
+    }
+    header {
+      background-color: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #e0aaff;
+    }
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .producto {
+      background-color: #1e1e1e;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .producto img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #333;
+    }
+    .producto h2 {
+      font-size: 1.1rem;
+      color: #e0aaff;
+      margin: 10px 0 5px;
+      text-align: center;
+    }
+    .producto p {
+      font-size: 0.9rem;
+      color: #ccc;
+      text-align: center;
+      min-height: 60px;
+    }
+    .precio {
+      color: #aaffaa;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .producto button {
+      background: #e0aaff;
+      border: none;
+      color: #121212;
+      padding: 10px 15px;
+      font-size: 0.95rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .producto button:hover {
+      background: #c18bff;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1f1f1f;
+      color: #999;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #e0aaff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .footer-icons {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Aixa Bags - Tienda Online</header>
+
+  <section class="productos">
+    <!-- Aquí irán hasta 20 productos -->
+    <div class="producto">
+      <img src="https://via.placeholder.com/300x200.png?text=MOCHI+PUFFER" alt="MOCHI PUFFER">
+      <h2>MOCHI PUFFER</h2>
+      <p>MOCHILA PUFFER, MEDIDAS 35X40X15CM, COLORES PERSONALIZADOS, TOTALMENTE FORRADA CON TELA IMPERMEABLE Y DIVISIÓN PARA LLEVAR TU NOTEBOOK</p>
+      <div class="precio">$30.000</div>
+      <button onclick="agregarAlCarrito('MOCHI PUFFER', 30000)">Agregar al carrito</button>
+    </div>
+
+    <!-- Agregá más productos copiando el bloque de arriba -->
+  </section>
+
+  <footer>
+    Seguinos en:
+    <div class="footer-icons">
+      <a href="https://www.instagram.com/aixa.bags" target="_blank">Instagram: @aixa.bags</a>
+      |
+      <a href="https://wa.me/543876848646" target="_blank">WhatsApp: 3876848646</a>
+    </div>
+  </footer>
+
+  <script>
+    const carrito = [];
+
+    function agregarAlCarrito(nombre, precio) {
+      carrito.push({ nombre, precio });
+      alert(nombre + ' agregado al carrito.');
+    }
+  </script>
+
+</body>
+</html>
